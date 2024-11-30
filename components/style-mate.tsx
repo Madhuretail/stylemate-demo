@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
@@ -93,9 +94,12 @@ export function StyleMateComponent() {
                 </div>
               </div>
               <div className="rounded-lg overflow-hidden shadow-xl">
-                <img 
+                <Image 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Leonardo_Vision_XL_Image_of_a_fashionable_woman_designer_who_g_3.jpg-Wlw4Uh46mM27RITBsVzxzB7u71V6at.jpeg"
                   alt="StyleMate Fashion Assistant"
+                  width={800}
+                  height={500}
+                  layout="responsive"
                   className="w-full h-auto object-cover"
                 />
               </div>
